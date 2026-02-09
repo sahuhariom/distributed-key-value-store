@@ -25,17 +25,24 @@ cd distributed-key-value-store/src
 gcc node.c -o node
 ```
 
+## Usage
 
-## Run a node
+### Run Commands
 ```bash
+# Run a node
 ./node
 ```
-## Follow the instructions in the console:
-  PUT(10,200)  --> To insert a key-value pair
-  GET(10)      --> To retrieve a value
-  r            --> To display the current node's hash table
+
+# Use these commands in the console:
+```
+PUT(10,200)  # To insert a key-value pair
+GET(10)      # To retrieve a value
+r            # To display the current node's hash table
 
 
+
+```
+# Project Structure
 ```
 distributed-key-value-store/
 ├── README.md
@@ -43,11 +50,12 @@ distributed-key-value-store/
     └── node.c
 ```
 
-
+# Sample Commands
+```
 PUT(10,200)
 GET(10)
 r
-
+```
 
 ## Notes
 
@@ -56,6 +64,7 @@ This project demonstrates basic distributed systems concepts including request f
 For simplicity, all nodes are run locally (127.0.0.1) and use consecutive ports.
 
 The program uses gets() for input, which is unsafe for production. For production-grade systems, use fgets() instead.
+
 
 
 
