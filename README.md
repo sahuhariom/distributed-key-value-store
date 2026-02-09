@@ -31,9 +31,9 @@ gcc node.c -o node
 ./node
 ```
 # Follow the instructions in the console:
-# PUT(10,200)  --> To insert a key-value pair
-# GET(10)      --> To retrieve a value
-# r            --> To display the current node's hash table
+  PUT(10,200)  --> To insert a key-value pair
+  GET(10)      --> To retrieve a value
+  r            --> To display the current node's hash table
 
 
 
@@ -56,5 +56,6 @@ This project demonstrates basic distributed systems concepts including request f
 For simplicity, all nodes are run locally (127.0.0.1) and use consecutive ports.
 
 The program uses gets() for input, which is unsafe for production. For production-grade systems, use fgets() instead.
+
 
 
