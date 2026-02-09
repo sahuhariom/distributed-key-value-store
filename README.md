@@ -22,30 +22,33 @@ cd distributed-key-value-store/src
 # Compile the C program
 gcc node.c -o node
 
-##Usage
+
+
 # Run a node
 ./node
 
-# Follow the instructions:
+# Follow the instructions in the console:
 # PUT(10,200)  --> To insert a key-value pair
 # GET(10)      --> To retrieve a value
 # r            --> To display the current node's hash table
 
 
-##Project Structure
+
 distributed-key-value-store/
 ├── README.md
 └── src/
     └── node.c
-##Sample Commands
+
+
+
 PUT(10,200)
 GET(10)
 r
 
 
-##Notes
+Notes
 
-Demonstrates basic distributed systems concepts including request forwarding, node communication, and hash table storage.
+This project demonstrates basic distributed systems concepts including request forwarding, node communication, and hash table storage.
 
 For simplicity, all nodes are run locally (127.0.0.1) and use consecutive ports.
 
