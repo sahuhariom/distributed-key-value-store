@@ -15,18 +15,21 @@ This project implements a Distributed Key-Value Store in C using TCP and UDP soc
 ```bash
 # Clone the repository
 git clone https://github.com/sahuhariom/distributed-key-value-store.git
-
+```
+```
 # Navigate to the src directory
 cd distributed-key-value-store/src
-
+```
+```
 # Compile the C program
 gcc node.c -o node
+```
 
 
-
-# Run a node
+## Run a node
+```
 ./node
-
+```
 # Follow the instructions in the console:
 # PUT(10,200)  --> To insert a key-value pair
 # GET(10)      --> To retrieve a value
@@ -46,10 +49,11 @@ GET(10)
 r
 
 
-Notes
+## Notes
 
 This project demonstrates basic distributed systems concepts including request forwarding, node communication, and hash table storage.
 
 For simplicity, all nodes are run locally (127.0.0.1) and use consecutive ports.
 
 The program uses gets() for input, which is unsafe for production. For production-grade systems, use fgets() instead.
+
