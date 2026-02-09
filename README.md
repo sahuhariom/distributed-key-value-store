@@ -16,18 +16,18 @@ This project implements a Distributed Key-Value Store in C using TCP and UDP soc
 # Clone the repository
 git clone https://github.com/sahuhariom/distributed-key-value-store.git
 ```
-```
+```bash
 # Navigate to the src directory
 cd distributed-key-value-store/src
 ```
-```
+```bash
 # Compile the C program
 gcc node.c -o node
 ```
 
 
 ## Run a node
-```
+```bash
 ./node
 ```
 # Follow the instructions in the console:
@@ -56,4 +56,5 @@ This project demonstrates basic distributed systems concepts including request f
 For simplicity, all nodes are run locally (127.0.0.1) and use consecutive ports.
 
 The program uses gets() for input, which is unsafe for production. For production-grade systems, use fgets() instead.
+
 
